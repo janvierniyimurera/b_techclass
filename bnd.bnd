@@ -1,0 +1,12 @@
+Bundle-Name: my_maven2_project
+Bundle-SymbolicName: com.codebind.demo
+Bundle-Version: 1.0-SNAPSHOT
+Export-Package: com.codebind.demo.constants
+-includeresource:\
+	@com.liferay.util.taglib-[0-9\.]*.jar!/META-INF/*.tld
+-metatype: *
+-plugin.metatype: com.liferay.ant.bnd.metatype.MetatypePlugin
+-plugin.resourcebundle: com.liferay.ant.bnd.resource.bundle.ResourceBundleLoaderAnalyzerPlugin
+-plugin.sass: com.liferay.ant.bnd.sass.SassAnalyzerPlugin
+-privatepackage: com.liferay.util.bridges.freemarker
+-sass: *
